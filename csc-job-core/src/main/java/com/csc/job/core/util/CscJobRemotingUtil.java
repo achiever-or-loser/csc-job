@@ -107,10 +107,9 @@ public class CscJobRemotingUtil {
                 return returnT;
             } catch (Exception e) {
                 logger.error("csc-rpc remoting (url=" + url + ") response content invalid(" + resultJson + ").", e);
-                return new ReturnT<String>(ReturnT.FAIL_CODE, "xxl-rpc remoting (url=" + url + ") response content invalid(" + resultJson + ").");
+                return new ReturnT<String>(ReturnT.FAIL_CODE, "csc-rpc remoting (url=" + url + ") response content invalid(" + resultJson + ").");
             }
-        } catch (
-                Exception e) {
+        } catch (Exception e) {
             logger.error(e.getMessage(), e);
             return new ReturnT<String>(ReturnT.FAIL_CODE, "csc-rpc remoting error(" + e.getMessage() + "), for url : " + url);
         } finally {

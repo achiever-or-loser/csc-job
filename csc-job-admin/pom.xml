@@ -69,7 +69,7 @@
             <version>${mysql-connector-java.version}</version>
         </dependency>
 
-        <!-- xxl-job-core -->
+        <!-- csc-job-core -->
         <dependency>
             <groupId>com.csc</groupId>
             <artifactId>csc-job-core</artifactId>
